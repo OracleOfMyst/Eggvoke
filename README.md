@@ -1,6 +1,8 @@
 # Eggvoke
 Eggvoke is a program that will take your egg and the system call value and create egg hunter shellcode. The egg hunter used is very popular and widely used.
 
+The modules for eggvoke can be install with the command `pip install -r requirements.txt`
+
 ## How to use
 To use Eggvoke it's pretty simple. You must first provide it two arguments on the command line. The first one is the value of the egg. This is what you have in your exploit and want to find. Next is the system call address you have. The script makes use of the `NtAccessCheckAndAuditAlarm` call and you will probably need to update the offset. I will show you a quick how-to when it comes to finding the new system call and converting it to something we can use. 
 
